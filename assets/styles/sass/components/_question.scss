@@ -1,0 +1,25 @@
+@use "../abstracts/colors" as c;
+
+.questions__container{
+    margin: 15px 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid c.$light-grayish-blue;
+    position: relative;
+}
+
+.faq__text{
+    //display: none;
+    padding-right: 30px;
+}
+
+.questions__icon{
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+
+// Remember to delete this from css and html.
+.show{
+    display: block;
+}

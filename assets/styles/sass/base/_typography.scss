@@ -1,0 +1,20 @@
+@use "../abstracts/colors" as c;
+
+*{
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 12px;
+}
+
+h1{font-size: 2.5rem;}
+
+h2{
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: c.$very-dark-grayish-blue;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1rem;
+    color: c.$dark-grayish-blue;
+}

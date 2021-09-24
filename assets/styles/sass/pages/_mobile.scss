@@ -1,0 +1,48 @@
+@use "../abstracts/colors" as c;
+@use "sass:math";
+
+.box__img-desktop,
+.pattern__img-desktop,
+.woman__img-desktop{
+    display: none;
+}
+
+.woman__img-mobile{
+    position: absolute;
+    top: -108px;
+    left: 50%;
+    transform: translate((-50% - 5%), 0);
+}
+
+.pattern__img-mobile{
+    position: absolute;
+    top: 1px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.card{
+    min-height: 520px;
+    width: 330px;
+    margin: auto;
+    margin-top: 150px;
+    position: relative;
+    border-radius: 30px;
+    background-color: c.$white-background;
+}
+
+.card__faq{
+    margin-top: 35px;
+}
+
+.title{
+    padding-top: 130px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media screen and(min-width: 768px) and (max-width: 1100px) {
+    .card{
+        width: 65vw;
+    }
+}
