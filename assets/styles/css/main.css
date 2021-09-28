@@ -29,10 +29,20 @@ body {
 }
 
 .questions__container {
+  min-height: 35px;
   margin: 15px 30px;
   padding-bottom: 10px;
   border-bottom: 1px solid #e7e7e9;
   position: relative;
+}
+
+.faq__question {
+  margin-top: 20px;
+  display: inline;
+}
+.faq__question:hover {
+  cursor: pointer;
+  color: #f47c57;
 }
 
 .faq__text {
@@ -44,9 +54,21 @@ body {
   right: 0;
   top: 5px;
 }
+.questions__icon:hover {
+  cursor: pointer;
+}
 
-.show {
-  display: block;
+.hidden {
+  display: none;
+}
+
+.selected {
+  font-weight: 700;
+  color: #1d1e35;
+}
+
+.rotated {
+  transform: rotate(180deg);
 }
 
 .box__img-desktop,

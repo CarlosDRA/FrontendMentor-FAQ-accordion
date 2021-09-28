@@ -1,14 +1,24 @@
 @use "../abstracts/colors" as c;
 
 .questions__container{
+    min-height: 35px;
     margin: 15px 30px;
     padding-bottom: 10px;
     border-bottom: 1px solid c.$light-grayish-blue;
     position: relative;
 }
 
+.faq__question{
+    margin-top: 20px;
+    display: inline;
+
+    &:hover{
+        cursor: pointer;
+        color: c.$soft-red;
+    }
+}
+
 .faq__text{
-    //display: none;
     padding-right: 30px;
 }
 
@@ -16,10 +26,21 @@
     position: absolute;
     right: 0;
     top: 5px;
+
+    &:hover{
+        cursor: pointer;
+    }
 }
 
+.hidden{
+    display: none;
+}
 
-// Remember to delete this from css and html.
-.show{
-    display: block;
+.selected{
+    font-weight: 700;
+    color: c.$very-dark-desaturated-blue;
+}
+
+.rotated{
+    transform: rotate(180deg);
 }
