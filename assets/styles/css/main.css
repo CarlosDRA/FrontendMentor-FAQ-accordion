@@ -94,8 +94,7 @@ body {
 .card {
   min-height: 520px;
   width: 330px;
-  margin: auto;
-  margin-top: 150px;
+  margin: 150px auto 80px auto;
   position: relative;
   border-radius: 30px;
   background-color: #fff;
